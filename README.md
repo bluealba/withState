@@ -2,7 +2,8 @@
 ===
 This is a wrapper around @dump247/storybook-state designed to be used as an storybook decorator. This is a VERY small util.
 
-**Usage
+!!Usage
+
 Just add `withState` decorator using storybook's `addDecorator` function
 
 ```
