@@ -1,0 +1,9 @@
+{
+  "name": "@bluealba/withState",
+  "version": "1.0.0",
+  "description": "Wrapper around @dump247/storybook-state to be used as an storybook decorator",
+  "main": "index.js",
+  "repository": "https://github.com/bluealba/withState.git",
+  "author": "Claudio Fernandez <claudio.fernandez@bluealba.com>",
+  "license": "MIT"
+}
