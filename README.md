@@ -6,7 +6,7 @@ This is a wrapper around @dump247/storybook-state designed to be used as an stor
 
 Just add `withState` decorator using storybook's `addDecorator` function
 
-```
+```javascript
 storiesOf("Checkbox", module)
 
 	.addDecorator(withState({ isSelected: false }))
