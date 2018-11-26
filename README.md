@@ -1,6 +1,13 @@
 @bluealba/withState
 ===
-This is a wrapper around @dump247/storybook-state designed to be used as an storybook decorator. This is a VERY small util.
+This is a wrapper around [@dump247/storybook-state](https://github.com/dump247/storybook-state) designed to be used as an storybook decorator. This is a VERY small and rather hacky util.
+
+## Install
+You can install it with `npm` using
+
+```
+npm install @bluealba/withState
+```
 
 ## Usage
 
