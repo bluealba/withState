@@ -34,7 +34,34 @@ storiesOf("Checkbox", module)
 	))
 ```
 
-`withState` function receives as very first parameter the initial state. One major drawback of this approach is that we not longer suppor different initial states per story.
+`withState` function receives as very first parameter the initial state that will be used for all the stories that don't
+provide an initial state.
+
+### Specifying the intial state
+
+Stories can overwrite the `initialState` value through their story parameters
+
+
+`withState` function receives as very first parameter the initial state that will be used for any story that doesn't 
+specify it. Stories can overwrite such value through their parameters:
+
+```javascript
+storiesOf("Checkbox", module)
+
+	.addDecorator(withState({ isSelected: false }))
+
+	.add("An ordinary unmanaged component, checked by default", ({store}) => (
+		<Checkbox
+			className="checkbox size-check"
+			isSelected={store.state.isSelected}
+			onChange={() => {
+				store.set({ isSelected: !store.state.isSelected });
+			}}
+		/>
+	), { initialState: { isSelected: true } })
+```
+
+### Combining with other decorators
 
 Since original `@dump247/storybook-state` HOC object is added later we are now able to combine this decorator with others that rely on component introspection. In other words, this now works perfectly:
 
