@@ -6,7 +6,7 @@ This is a wrapper around [@dump247/storybook-state](https://github.com/dump247/s
 You can install it with `npm` using
 
 ```
-npm install @bluealba/withState
+npm install @bluealba/with-state
 ```
 
 ## Usage

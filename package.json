@@ -1,5 +1,5 @@
 {
-  "name": "@bluealba/withState",
+  "name": "@bluealba/with-state",
   "version": "1.0.1",
   "description": "Wrapper around @dump247/storybook-state to be used as an storybook decorator",
   "main": "index.js",
